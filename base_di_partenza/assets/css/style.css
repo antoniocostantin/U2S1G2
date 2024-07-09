@@ -21,6 +21,12 @@ section h2 {
 hr {
   display: none;
 }
+main{
+  position: relative;
+}
+aside div{
+  position: relative;
+}
 
 /* rimuove l'elemento */
 
@@ -37,14 +43,68 @@ header {
   position: sticky;
   top: 0;
   padding: 2em 1.5em;
-  z-index: 10;
+  z-index: 8;
 }
 
 .fa-tag {
   position: absolute;
-  width: 100%;
-  right: 80px;
-  transform: rotateY(180deg);
+  right: 10px;
+  color: #cecece;
+  font-size: 60px;
+  top: 10px;
+}
+
+#buttonupage{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0.6;
+  border: 1px solid #f7555d;
+  border-radius: 8px;
+  height: 50px;
+  background-color: #fdf2ef;
+}
+
+
+#calendar{
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+  color: #3165bf;
+  opacity: 0.6;
+  border: 1px solid #3165bf;
+  border-radius: 8px;
+  height: 50px;
+  width: 50px;
+  background-color: #fdf2ef;
+  z-index: 10;
+}
+
+#plus{
+  position: fixed;
+  bottom: 150px;
+  right: 10px;
+  color: #3165bf;
+  opacity: 0.6;
+  border: 1px solid #3165bf;
+  border-radius: 8px;
+  height: 50px;
+  width: 50px;
+  background-color: #fdf2ef;
+  z-index: 10;
+}
+
+#plusicon{
+  font-size: 45px;
+}
+
+#calicon{
+  font-size: 45px;
+}
+
+#up{
+  color: #f7555d;
+  font-size: 50px;
 }
 
 @media screen and (min-width: 800px) {
@@ -134,6 +194,12 @@ main {
   main {
     padding: 2em;
   }
+  #plus{
+    top: 20px;
+  }
+  #calendar{
+    top: 80px
+  }
 }
 
 section {
@@ -142,6 +208,8 @@ section {
   margin-bottom: 2em;
   position: relative;
 }
+
+
 
 section h2 {
   text-align: center;
